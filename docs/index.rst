@@ -23,13 +23,13 @@ Contents
    :maxdepth: 2
 
    introduction-to-dappnode.rst
-   user-guide.rst
    install-dappnode.rst
    dappnode-by-example.rst
    dappnode-core.rst
    security-considerations.rst
    contributing.rst
    frequently-asked-questions.rst
+   user-guide.rst
 
 
 Indices and tables

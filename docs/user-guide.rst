@@ -1,1 +1,9 @@
-Hi User! 
+.. index:: ! userguide
+
+.. userguide:
+
+#######################
+User Guide
+#######################
+
+User guide.

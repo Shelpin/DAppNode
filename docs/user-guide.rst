@@ -236,7 +236,363 @@ Now you can do things like for example:
 
 ●	Go to IPFS by entering http://my.ipfs.dnp.dappnode.eth:5001/webui into your browser.
 
-●	You have a websocket of your parity node in ws://my.ethchain.dnp.dappnode.eth:8546 and you can  use http://my.ethchain.dnp.dappnode.eth:8545 as a custom RPC to connect to metamask i.e 
+●	You have a websocket of your parity node in ws://my.ethchain.dnp.dappnode.eth:8546 and you can  use http://my.ethchain.dnp.dappnode.eth:8545 as a custom RPC to connect to metamask i.e
+
+**NOTE ABOUT ACCESSING IPFS WEBUI:**
+
+We have updated our IPFS package (v.0.1.4), and one of the features  is to provide  a more complete and user friendly web interface. The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node , this is the input you have to enter in the field seen in the image below. 
+
+``/ip4/172.33.1.5/tcp/5001``
+
+
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/ipfsinterface.jpg
+   :width: 300 px
+   :align: center
+   
+
+###################################
+Welcome to Dappnode – The Admin UI
+###################################
+
+Once you have succeeded in connecting to your DAppNode via VPN, you will have access to the above-mentioned URL. Be aware of this historic moment; it might very likely be the first  ETH domain you visit. 
+
+The Admin UI allows the installation of packages in your DAppNode, adding devices to connect for your friends and family, monitoring its health and allowing fully functional operation without having to open the console. 
+
+Let’s have a look to see what you will find here. 
+
+Dashboard
+=========
+
+When you first enter the Admin UI, you will see a link to a survey made to tell us how the installation went and provide your  insights about  the process. We greatly appreciate this feedback in order to help us to make a better product. 
+
+By clicking “Dashboard” you can see a summary of the components that make up the system and its status. This is what a healthy DAppNode dashboard looks like:
+
+1 Tabs area
+
+2 Name of the server / Internal IP
+
+3 Health of core services
+
+4 Error reporting area (in this example, the DAppNode is in good shape so nothing appears here)
+
+5 Sync  State
+
+6. Server stats
+
+
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/taabsscreen.png
+   :width: 300 px
+   :align: center
+   
+**IMPORTANT NOTE ON SERVER STATS: if you note that the disk capacity is getting near to 100 % you should disable services  to avoid  the disk getting full. If this happens the  DAppNode will get unfunctional, and you will not be able to erase packages once the memory is at 100%** 
+
+Activity
+========
+
+This tab allows easy access to the DAppNode logs in order to debug errors. We work hard to make this tab irrelevant to you, but for the time being, if you are experiencing any issue, these logs will help our support team  help you identify and fix any problem. You will also find a button to download a log report file.
+
+Devices
+=======
+
+This tab is one of the cornerstones of our vision, as the functionality is meant to build trusted circles that connect to the decentralized web through a DAppNode installed on a piece of self-owned hardware that provides access to your friends and family. 
+
+Just click “add a device”, name it and you will get a QR / link that contains the file to configure the VPN to connect to your DAppnode for any friend or family member. 
+
+This is the same process that you performed while installing your DAppNode when you accessed the first URL that the DAppNode sent  you to. In fact, the DAppNode created the first device for you, now it is your turn…  
+
+Take into account that each device added has its own VPN credentials and is valid only for one concurrent connection, but you can add as many devices as you want. 
+
+If there is a device using the same VPN credentials, you will be able to connect to the VPN with other devices, but you won´t be able to access the  DAppNode. 
+
+You also have the ability to give a device admin privileges so the ADMIN UI can be used by them. If any device without admin credentials tries to access the ADMIN UI, it will not work. 
+
+**Take in account that if you remove admin privileges to any device while that device is connected to the server, it will still be able to access the admin UI and thus that device can make itself admin again, to prevent this, after removing admin privileges  to any user  you should restart the VPN package by going to System / VPN / Restart. This also  applies when you want to remove access to any device without admin privileges.** 
+
+Guest User functionality
+------------------------
+
+In the devices section you will find a Guests  functionality that can be enabled / disabled at your own discretion. 
+
+This functionality allows multiple users to connect with a single pair of credentials, what is specially useful in teaching environments or when you want to connect people without adding a device for each user.  
+
+When you disable this functionality, any user that is connected to the VPN will still be able to use your DAppNode until you restart  the VPN service in System / VPN / Restart. 
+
+Installer
+=========
+
+Here you have the DAppstore where you can directly install a growing amount of services and libraries just by a click and they will install. Please let us know which ones would you like to have in the DAppstore by filling out this little survey.
+
+https://goo.gl/forms/EjVTHu6UBWBk60Z62
+
+From the installer you can also install packages not shown in the interface by pasting its IPFS hash or its ENS domain in the above bar. The interface will show you the corresponding package to that IPFS hash/ETH domain and you will be able to install it if there are no compatibility issues. (see below section Have your own packages in DAppNode)
+
+We have added a functionality that allows to customize  some packages with predefined configurations made by the developer of the node/ DApp, please check the project documentation to see which options to customize are  available.  
+
+You can also select your own customized  path for the installation of the package  by writing your selected path  in the field aside the path by default
+
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/environmentvariables.png
+   :width: 300 px
+   :align: center
+   
+
+Here you have a brief description of some of the available packages:
+
+Testnet nodes
+-------------
+
+With DAppNode, you can easily set up nodes of the Rinkeby and Kovan networks for testing purposes. Just find in Packages the testnet you want to set up in your DAppNode, install it and it will immediately start to synchronize.
+
+As with Parity Main net node, you have your websocket in the port 8546 and your RPC connection in the port 8545 using the following URLs:
+
+my.rinkeby.dnp.dappnode.eth
+my.kovan.dnp.dappnode.eth
+my.ropsten.dnp.dappnode.eth
+
+Görli
+_____
+
+Görli, the only Proof of Authority testnet that has compatibility with Geth, Pantheon and Parity is available for you to run with a couple of clicks in your DAppNode.
+
+Livepeer
+--------
+
+Livepeer is an open Source Video Infrastructure Services platform, built on the Ethereum Blockchain (Rinkeby). With the Livepeer package you can easily set up a Livepeer node. Have a look to https://livepeer.org to get more info and docs. 
+
+Please note that if you install this package that is running in Rinkeby, you need to have installed the Rinkeby chain for LivePeer to work properly. This is the same with any other services. You will need to have a node of the chain it is running on. 
+
+Swarm
+-----
+
+Swarm is a distributed storage platform and content distribution service, a native base layer service of the ethereum web3 stack that we have made available as a DAppNode package so you can easily install and maintain your own Swarm node.  
+
+Monero
+------
+
+DappNode has a Monero daemon package available that will be your very own Monero node, as using Monero without your own node is a bit like having your DappNode in AWS (defeats the purpose). 
+
+Let’s see how to connect a Monero wallet to your node.
+ 
+Once you have installed the Monero daemon, with a couple of clicks you are ready to set up your wallet connected to your node. 
+
+In Monero a node is called a daemon, and does not have a wallet functionality. They are two separate pieces of software that work together by connecting your Graphic User Interface, or command line wallet to your own node.
+ 
+For this example, we will use the official Monero GUI that you can get at  www.getmonero.org
+ 
+Select the GUI wallet version for your OS. Install it and open it. After showing you your keys and so on, the app will ask you which node you want to connect to.Simply select remote node, include http://my.monero.dnp.dappnode.eth as the node address, 18081 as the port and you are done!!!	
+ 
+Now you have your Monero wallet connected to your own node!!!!
+ 
+Do not buy any tanks please ;)...
+
+Packages
+========
+
+Here you can see the packages you have installed and manage
+them, access to their logs, stop and restart them, remove them and preserve its data, or remove the package and the data. 
+
+These are the main options you can execute on your installed packages:
+
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/packagecontrols.png
+   :width: 300 px
+   :align: center
+   
+   
+System
+======
+
+Here you can access the packages that are part of the DAppNode core and manage them, see their logs, restart them or delete its associated data to be restored. 
+
+If you have a Static IP you can set it up here so the future VPN credentials generated  point to that fixed  ip, just include your Static IP in the box and hit “Set”, you can always disable. 
+
+Even though this might get a bit technical here for a user guide, here is  a short description of each package:
+
+BIND
+----
+
+Local DAppNode DNS. Links each package docker IP to a name in the format of my.[package-name].dnp.dappnode.eth. It also redirects .eth domains to the ethforward. 
+
+VPN
+----
+Provides a basic VPN for users to consume dappnode’s services.
+
+It runs a `xl2tpd <https://github.com/xelerance/xl2tpd>`_ process alongside a nodejs app, both controlled by a supervisord process. The nodejs app connects with the WAMP to manage VPN users directly editing the /etc/ppp/chap-secrets file, which holds the user's credentials.
+
+The user IP is static and set when that user is created. The static IP is used by the WAMP for authentication to allow only admin users to perform certain actions. Currently, there are three types of users:
+
+●	172.33.10.1: Super admin. It is created when DAppNode is installed and can never be deleted
+
+●	172.33.10.x: Admin user.
+
+●	172.33.100.x: Non-admin user.
+
+ETHCHAIN
+========
+
+Local full mainnet Ethereum node. Right now it uses Parity, but we are testing Geth against Parity to take a decision based on each client’s efficiency, memory usage, and time to use among other parameters.
+
+ETHFORWARD
+==========
+
+Resolves .eth domains by intercepting outgoing requests, calling ENS, and redirecting to the local IPFS node.
+
+It is a nodejs http proxy server, which also returns custom 404 pages if the content is not found or available or if the chain is still not synced.
+
+IPFS
+====
+
+Local IPFS node. Its gateway is available at:
+
+``host: my.ipfs.dnp.dappnode.eth
+port: 5001
+protocol: http``
+
+WAMP
+====
+
+Handles inter-package communications. Restricts certain operations to only admin users.
+
+We are using `crossbar.io <https://crossbar.io/>`_ and its javascript client `autobahn.js <https://github.com/crossbario/autobahn-js>`_. Please refer to their documentation for more details.
+
+DAPPMANAGER
+===========
+
+Installs and manages DAppNode packages (DNPs). It’s a nodejs app whose procedures are only consumed by the ADMIN, and depends on IPFS and ETHCHAIN to function.
+
+ADMIN
+=====
+
+Handles admin users <-> DAppNode interactions, such as managing packages or VPN users, is an NGINX process that serves a single-page React app that consumes RPCs of the DAPPMANAGER and the VPN.
+
+########################################
+What can you do now with your Dappnode??
+########################################
+
+VPN connection
+==============
+
+Now you have your own VPN service to privately connect to your DAppNode and also to provide access for your family and friends to connect to ETH domains through your DAppNode.
+
+Parity
+======
+
+After a few hours of installing DAppNode you will have your own Ethereum node running in your DAppNode. 
+
+You have available your parity websocket in 
+ws://my.ethchain.dnp.dappnode.eth:8546 and RPC connection through http://my.ethchain.dnp.dappnode.eth:8545
+
+MyCrypto
+========
+
+You can now enter a decentralized version of MyCrypto that it is not only hosted in IPFS but is using your node to connect to the Ethereum network. However, note that as the access URL is not https there might be incompatibilities; we are working hard to solve this issue and give you an awesome user experience using MyCrypto in a decentralized way. Just access  it in http://mycrypto.dappnode.eth/ for now. 
+
+
+Metamask
+========
+
+You also can use Metamask connected to your own node, not with the pre-set Metamask nodes. To configure your Metamask while connected to your DAppNode, just follow these steps:
+
+First, you must be connected to your DAppNode’s VPN:
+
+1.	Click “Main network” on top to the left.
+
+2.	Click Custom RPC.
+
+3. “New RPC URL”: http://my.ethchain.dnp.dappnode.eth:8545
+
+4. Now you should be connected to “Private Network” and that’s it!!
+
+
+IPFS
+====
+
+When you install DAppNode an IPFS daemon is installed and your account is automatically created so you can start uploading and requesting the decentralized storage that the InterPlanetary File System offers. 
+
+You can access the web ui entering http://my.ipfs.dnp.dappnode.eth:5001/webui
+
+We have updated our IPFS package (v.0.1.4), and one of the features  is to provide  a more complete and user friendly web interfaz. The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node , this is the input you have to enter in the field seen in the image below.
+
+``/ip4/172.33.1.5/tcp/5001``
+
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/ipfsinterface.jpg
+   :width: 300 px
+   :align: center
+
+If you want to know a bit more on IPFS here is a `useful link:<https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937>`_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+
+
+
+
+   
+   
+   
+  
+
+
 
 
 

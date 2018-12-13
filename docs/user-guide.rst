@@ -210,6 +210,38 @@ These are the parameters you will need to configure, still  depending on your op
    :align: center
    
    
+**VPN TYPE**: Select L2TP over IPSEC
+**Server IP**: Select the IP given by the terminal when connecting to the DAppNode via SSH. If you are behind a router without NAT Loopback,  you will also find in the terminal the internal IP you need to use to be able to connect being in the same network without NAT Loopback enabled.
+**PSK**: Shared secret, you will find it in the terminal. 
+**VPN User**: This is the username of the super administrator and your terminal will give it to you too.
+**Password**: You can also find the password in the terminal output when connecting to your DAppNode. 
+
+Now it is time…
+
+####################
+Enter  your DAppNode
+####################
+
+Navigate to my.admin.dnp.dappnode.eth to access DAppNode's administrative page. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a snapshot).
+
+Now you can do things like for example:
+
+●	Navigate to a decentralized web `decentral.eth <http://decentral.eth>`_:
+
+●	Decentralized version of `Mycrypto <http://mycrypto.dappnode.eth>`_
+
+●	Decentralized version of `ENS Manager <http://ens.dappnode.eth>`_
+
+●	Decentralized version of `Wallet Gnosis <http://gmultisig.dappnode.eth>`_
+
+●	Go to IPFS by entering http://my.ipfs.dnp.dappnode.eth:5001/webui into your browser.
+
+●	You have a websocket of your parity node in ws://my.ethchain.dnp.dappnode.eth:8546 and you can  use http://my.ethchain.dnp.dappnode.eth:8545 as a custom RPC to connect to metamask i.e 
+
+
+
+   
+   
 
      
 

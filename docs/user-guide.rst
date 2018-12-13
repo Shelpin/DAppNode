@@ -124,6 +124,61 @@ If the installation succeeded, your system will reboot, you will have to log in 
 .. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/dappnode-installation-ending-screen.png?raw=true
    :width: 300 px
    :align: center
+   
+Installation via script
+=======================
+
+WARNING
+-------
+This software is not meant to be run in a remote machine hosted by any remote provider. What DAppNode specifically wants to avoid is  centralization of the machines that our digital lives rely on; nevertheless we understand that before buying a dedicated machine to run your Dappnode you might want to test it and see how easy it is to use….
+
+And… only for that reason will we look aside when someone installs a DAppNode in a virtual provider. We want it to be clear that kind of use is not the recommended use, but for testing purposes only. 
+
+Remember: ***Your hardware, your coins, your privacy, your freedom.***
+
+Script installation guide
+_________________________
+
+For this example we'll be installing DAppNode on a Digital Ocean droplet, but the process should work for any other Ubuntu Server 18.04. 
+
+***We strongly recommend using 8GB+ of RAM and a 160Gb+ SSD hard drive.***
+
+Install DAppNode and its dependencies
+_____________________________________
+
+Install the prerequisites (docker and docker-compose) running this command in the terminal of the machine you want to install  the DAppNode server,if using a Virtual Service Provider, you have first to connect you via SSH to that machine.
+
+``sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.3/dappnode_install_pre.sh | sudo bash``
+
+Install DAppNode
+________________
+
+``sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.3/dappnode_install.sh | sudo bash`
+
+If you have an static IP and want to set it up right from the connection, then run the command with the following variable including your staatic ip
+
+``sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.3/dappnode_install.sh | sudo STATIC_IP="your static IP" bash``
+
+When the installation is done and is successful, you will be given credentials to connect to your DAppNode. 
+Take into account that the chain will take some time to synchronize and you will not be able to perform most of the actions before that.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

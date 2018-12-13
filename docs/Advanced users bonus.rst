@@ -74,6 +74,7 @@ web3 = new Web3('ws://my.ethchain.dnp.dappnode.eth:8546');
 After this step, the wallet will connect directly to our DAppNode, in case of not being able to go through MetaMask. 
 
 ``meteor-dapp-wallet/app/client/lib/ethereum/observeTransactions.js``
+
 In line 532 change:
 
 Session.get('network') == 'main' &&
@@ -115,7 +116,7 @@ Solve SourceSansPro-ExtraLightIt error
 
 Once these steps are finished we’re in a position to create a new build:
 
-``$ meteor-build-client ../build — path ""
+``$ meteor-build-client ../build — path ""``
 
 
 

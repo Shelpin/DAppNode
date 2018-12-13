@@ -153,14 +153,66 @@ Install the prerequisites (docker and docker-compose) running this command in th
 Install DAppNode
 ________________
 
-``sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.3/dappnode_install.sh | sudo bash`
+``sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.3/dappnode_install.sh | sudo bash``
 
 If you have an static IP and want to set it up right from the connection, then run the command with the following variable including your staatic ip
 
 ``sudo wget -O - https://github.com/dappnode/DAppNode/releases/download/v0.1.3/dappnode_install.sh | sudo STATIC_IP="your static IP" bash``
 
 When the installation is done and is successful, you will be given credentials to connect to your DAppNode. 
+
 Take into account that the chain will take some time to synchronize and you will not be able to perform most of the actions before that.
+
+
+##################
+Connect to the VPN
+##################
+
+Once you have your DAppnode running, you will get an URL in your terminal from where you can download the VPN config file and install it on your device. Just download it and follow the instructions. For Android, Ubuntu and Windows you have to set the VPN following the instructions.
+
+Installing (or manually setting up)this VPN file will configure your VPN connection to your DAppNode from your device. The first device VPN connection will have super admin privileges so you can access and manage the DAppnode admin UI; this user cannot be deleted.
+
+Take into account that some VPN clients might send all traffic through the VPN, which is not very ideal if you have many  people connected to your DAppNode, or only to send traffic which points to an ETH domain. 
+
+DAppNode is not intended to manage all the traffic of the devices connected to it, only the ETH domains access requests.
+As a general rule, if your DAppNode is not connected through a router that supports UPnP, you will have to manually open some ports to have complete functionality. For the VPN to work you must make sure that you have opened the 4500 and 500 ports (UDP). 
+
+Here you have a sample table of the ports that should be opened in your DAppNode: 
+
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+   
+
+   * - **Service** 
+     - **TCP**
+     - **UDP**
+   * - VPN
+     -
+     - 500,4500
+   * - SSH
+     - 22
+     - 
+   * - Ethereum Node
+     - 30303
+     - 30303
+   * - IPFS
+     - 4001
+     - 4002
+     
+     
+If you are not able to download or install the config file, you can set it up manually following the instructions for different platforms contained in the link that the terminal gives after installation. All the parameters you need to fill in are given by your terminal when you first install it or when you connect to it vía SSH. 
+
+These are the parameters you will need to configure, still  depending on your operating system follow the instructions you will find in the website  you will be directed to. 
+
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/credentialsscreen.png
+   :width: 300 px
+   :align: center
+   
+   
+
+     
+
 
 
 

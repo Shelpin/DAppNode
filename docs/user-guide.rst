@@ -71,6 +71,23 @@ How to install Dappnode on your machine
 
 Okay, so you’re ready to join the real DAppers. Let us show you how to make that hardware sing the hardware decentralization song!
 
+How to install DAppNode from an ISO
+-----------------------------------
+
+Download the image from  `DAppNode-ubuntu-18.04-server-amd64_v0.1.3.iso <https://github.com/dappnode/DAppNode/releases/download/v0.1.3/DAppNode-ubuntu-18.04-server-amd64_v0.1.3.iso>`_  or `build it  from source <https://github.com/dappnode/DAppNode_Installer>`_
+
+Burn the ISO in a USB (~8 min)
+------------------------------
+Burn the ISO to an USB stick, please follow the official Ubuntu instructions for `MacOS https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0`_, `Windows https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0`_  or `Ubuntu https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0`_.
+
+Please note that these instructions are intended to generate the ISO image in a bootable USB from a Mac, Windows or Linux device , and then install it in a server. *IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED.* DAppnode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
+
+
+
+
+
+
+
 
 
 

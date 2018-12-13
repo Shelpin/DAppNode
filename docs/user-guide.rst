@@ -78,10 +78,57 @@ Download the image from  `DAppNode-ubuntu-18.04-server-amd64_v0.1.3.iso <https:/
 
 Burn the ISO in a USB (~8 min)
 ------------------------------
-Burn the ISO to an USB stick, please follow the official Ubuntu instructions for `MacOS https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0`_, `Windows https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0`_  or `Ubuntu https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0`_.
+Burn the ISO to an USB stick, please follow the official Ubuntu instructions for `MacOS <https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0>`_, `Windows <https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0>`_  or `Ubuntu <https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu#0>`_.
 
-Please note that these instructions are intended to generate the ISO image in a bootable USB from a Mac, Windows or Linux device , and then install it in a server. *IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED.* DAppnode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
+Please note that these instructions are intended to generate the ISO image in a bootable USB from a Mac, Windows or Linux device , and then install it in a server. ***IF YOU EXECUTE THE BOOTABLE USB IN A MACHINE CONTAINING DATA IT WILL BE ERASED.*** DAppnode is intended to run 24/7 so if you install it in a laptop or desktop machine and you turn it off it will lose the sync
 
+Install an Ubuntu distribution (~15 min)
+----------------------------------------
+
+Insert the USB into your Server and prepare to install an Ubuntu distribution. You will have to make sure that your Server boots from the USB. If you succeed at booting up from your USB, you will be greeted with this screen or a similar one:
+
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/dappnode-installation-welcome-screen.png
+   :width: 300 px
+   :align: center
+   
+Follow the Ubuntu installation steps; various screens will guide you through the process. You can follow this standard option for a default installation:
+
+Recommended setup
+-----------------
+
+Note by following these instructions you will erase your Server's disk contents.
+
+1.	***Select a language*** - Language: [English]
+2.	***Select your location*** - Country, territory or area: [United States]
+3.	***Configure the keyboard*** - Detect keyboard layout? [Yes] Follow the instructions to detect your keyboard
+4.	***Configure the network*** - Hostname: [DAppNode]
+5.	***Set up users and passwords*** - Full name for the new user: [DAppNode]
+6.	***Set up users and passwords*** - Username for your account: [dappnode]
+7.	***Set up users and passwords*** Choose a password for the new user: [YOUR_PASSWORD]
+8.	***Set up users and passwords*** - Re-enter password to verify: [YOUR_PASSWORD]
+9.	***Set up users and passwords*** - Encrypt your home directory? [No]
+10.	***Configure the clock*** - Is this time zone correct? [Yes]
+11.	***Partition disk*** - Partitioning method: [Guided - use entire disk and set up LVM]
+12.	***Partition disk*** - Select disk to partition: [SCSI33 (0,0,0) (sda) - ...]
+13.	***Partition disk*** - Write the changes to disks and configure LVM? [Yes]
+14.	***Partition disk*** - Amount of volume group to use for guided partitioning: [Continue]
+15.	***Partition disk*** - Write the changes to disks? [Yes]
+16.	***Configure the package manager*** - HTTP proxy information (black for none): [Continue]
+17.	***Configuring tasksel*** - How do you want to manage upgrades on this system? [Install security updates automatically]
+18.	***Software selection*** - Choose software to install [OpenSSH server] Use the arrows to navigate to the option, and the spacebar to select it.
+19.	***Install the GRUB boot loader on a hard disk*** - Install the GRUB boot loader to the master boot record? [Yes]
+20.	***Finish the installation*** - Installation complete [continue]
+
+If the installation succeeded, your system will reboot, you will have to log in with the user and password provided in the installation, and it should finish with this screen:
+
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/dappnode-installation-ending-screen.png?raw=true
+   :width: 300 px
+   :align: center
+
+
+
+
+   
 
 
 

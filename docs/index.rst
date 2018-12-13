@@ -30,7 +30,7 @@ Contents
    contributing.rst
    frequently-asked-questions.rst
    user-guide.rst
-   Advanced users bonus.srt
+   Advanced users bonus.rst
 
 
 Indices and tables

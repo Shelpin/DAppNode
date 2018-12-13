@@ -517,7 +517,22 @@ We have updated our IPFS package (v.0.1.4), and one of the features  is to provi
    :width: 300 px
    :align: center
 
-If you want to know a bit more on IPFS here is a `useful link:<https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937>`_
+If you want to know a bit more on IPFS here is a `useful link: <https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937>`_
+
+ENS resolution
+==============
+
+When your device is connected to a #DAppNode, you can use ".eth" domains that resolve to ipfs/swarm hashes.
+
+Note that your browsing device is connected to your DAppNode via VPN, and the VPN is configured to distinguish DNS or ENS traffic, to send only the ENS traffic through the DAppNode (make sure in your VPN config that you are not sending all the traffic through the VPN). When you access a .eth domain from your browser, the DAppNode uses the ETHFORWARD core package to resolve the .eth domain to a IPFS hash via ENS, then the DAppNode looks for the hashed content in IPFS and serves the content to your browser.  
+
+Now you can seamlessly navigate ETH domains in a decentralized way. 
+
+
+
+
+
+
 
 
 

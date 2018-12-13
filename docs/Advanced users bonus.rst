@@ -118,5 +118,66 @@ Once these steps are finished we’re in a position to create a new build:
 
 ``$ meteor-build-client ../build — path ""``
 
+Upload to IPFS
+--------------
+
+When uploading content to IPFS we use a tool we have created that can be used if you are connected to DAppNode (this tool is currently experimental, and will be improved in the coming months) or you could use the command ``ipfs add -r build``.
+
+Using our tool the next steps would be:
+
+``$cd ..``
+
+``$npm install -g @dappnode/ipfsuploader``
+
+``$ipfsuploader build/``
+
+After executing the last command you will obtain a similar output (they will not be the same hashes) to this one:
+
+``Qmb5oxJWf5Zw1UnvewkRM6V5qVbxWcY5s59FvhtWhC6F4Fbuild/i18n``
+
+``QmQV1tXNCZsD82LiLwWpHvdwWqbGXJd8q1Pq2hMPxyiKFabuild/packages/es5-shim``
+
+``QmTte2i1HQKRgUgA8ZuVANwmqLCjjYzddmCekbUqJ3fmCAbuild/packages/ethereum_dapp-styles/fonts``
+
+``QmWMVompWymG8CmCgyB57dvaWegymjknMFTUQVrWfYebYubuild/packages/ethereum_dapp-styles/icons``
+
+``QmTCXm13p6PW7CnKegNqFP3mCgt8sAaNNteCJDjFiGP3Jmbuild/packages/ethereum_dapp-styles``
+
+``QmVvCPByChGfmEvxS2Nv6icKZSJ27aYqDSUzP2gta44XYbbuild/packages/ethereum_elements``
+
+``QmXQ6fGzJsDAUGuLFxG8wgMgvyvgnR6pW9yeue3VUtdHnebuild/packages``
+
+``QmTRpmNWiAkYQnesiGZRVE9NwbEfqZLH4DnLmbCmjMGaLLbuild/sockjs``
+
+``QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73build``
+
+
+If we use the hash associated with `build` and access it through this URL:
+
+http://my.ipfs.dnp.dappnode.eth:8080/ipfs/QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73 
+
+The website is now distributed in IPFS!
+
+Point the ENS domain to the IPFS hash
+--------------------------------------
+
+If you are the owner of an ENS domain you can make this point to the hash you want. We are going to use `wallet.dappnode.eth <http://wallet.dappnode.eth>`_ for this example:
+
+1.	Go to http://mycrypto.dappnode.eth/#contracts (if you don’t have access to a DAppNode you can use the centralized alternative) https://mycrypto.com#contracts or https://www.myetherwallet.com/#contracts)
+
+2.	Select: ENS: Public Resolver 0x5FfC014343cd971B7eb70732021E26C35B744cc4
+
+3.	Access
+
+4.	Go to https://etherscan.io/enslookup and search for wallet.dappnode.eth noting its NameHash (in this case 0x7407….8c02)
+
+5.	setText
+
+   **node bytes 32:** 0x7407156505d4facdb6474ccee4aac0c34679f5d6fddb603ab6e8976d8e138c02
+   
+   **key:** dnslink
+   
+   **value:**/ipfs/QmZQ3GzqXHCRM6uccP6TcZdPGPSyqJXyhwLETD2T2o8m73
+   
 
 

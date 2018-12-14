@@ -30,5 +30,26 @@ Ports that need to be opened
 
 Please find in this table the ports that need to be opened for the smooth functioning of your DAppnode and installed packages.
 
+.. list-table::
+   :widths: 25 25 50
+   :header-rows: 1
+   
+
+   * - **Service** 
+     - **TCP**
+     - **UDP**
+   * - VPN
+     -
+     - 500,4500
+   * - SSH
+     - 22
+     - 
+   * - Ethereum Node
+     - 30303
+     - 30303
+   * - IPFS
+     - 4001
+     - 4002
+
 
 However, if your router supports UPnP, do not worry about this, it will manage all the ports stuff for you. 

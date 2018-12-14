@@ -32,6 +32,7 @@ Contents
    user-guide.rst
    Advanced users bonus.rst
    Troubleshooting.rst
+   License.rst
 
 
 Indices and tables

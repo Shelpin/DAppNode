@@ -31,6 +31,7 @@ Contents
    frequently-asked-questions.rst
    user-guide.rst
    Advanced users bonus.rst
+   Troubleshooting.rst
 
 
 Indices and tables

@@ -184,6 +184,14 @@ If you are the owner of an ENS domain you can make this point to the hash you wa
    :align: center
    
    
+With these parameters we make the transaction in ethereum and once it’s mined the web will be accessible from that domain!!
+
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/walletdappnodeeth.png
+   :width: 500 px
+   :align: center
+
+
+
    
    
 

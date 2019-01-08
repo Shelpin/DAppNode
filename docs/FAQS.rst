@@ -3,7 +3,7 @@
 .. FAQS:
 
 ############################
-Frequently Asked Questions
+FAQ´s
 ############################
 
 What are the hardware minimum requirements for DAppNode to work ?? 

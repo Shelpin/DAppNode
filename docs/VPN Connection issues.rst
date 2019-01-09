@@ -77,7 +77,7 @@ If following the instructions has not made your connection to work, try to manua
    :align: center
    
    
- .. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/routes.jpg
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/routes.jpg
    :width: 300 px
    :align: center
    

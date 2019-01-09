@@ -23,10 +23,10 @@ Contents
    :maxdepth: 2
 
    user-guide.rst
-   Advanced users bonus.rst
    VPN Connection issues.rst
    FAQS.rst
    Troubleshooting.rst
+   Advanced users bonus.rst
    License.rst
 
 

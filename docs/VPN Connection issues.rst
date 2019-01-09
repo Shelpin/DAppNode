@@ -65,13 +65,12 @@ Note that you have to run this command as elevated command prompt and then reboo
 Linux & Android
 ===============
 
-If following the instructions has not made your connection to work, try to manually setup a VPN profile within your computer using the credentials given in the OTP web you get after installation under the tab Linux. 
+If following the instructions has not made your connection to work, try to manually setup a VPN profile within your computer/phone using the credentials given in the OTP web you get after installation under the tab Linux/Android.
 
-.. image:: doc/ipsecoopotions.jpg
+.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/ipsecoopotions.jpg
    :width: 300 px
    :align: center
 
-https://github.com/Shelpin/DAppNode/blob/master/doc/ipsecoopotions.jpg
 
 .. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/username.jpg
    :width: 300 px

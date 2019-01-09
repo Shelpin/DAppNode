@@ -7,6 +7,7 @@ VPN Connection issues
 ######################
 
 The VPN is one of the pillars of the whole DAppNode functioning, you will need a somehow decent and stable internet connection to be able to connect to the server. 
+
 Os & Ios Users 
 ==============
 

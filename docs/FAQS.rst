@@ -6,12 +6,12 @@
 FAQ´s
 ############################
 
-What are the hardware minimum requirements for DAppNode to work ?? 
+What are the hardware minimum requirements for DAppNode to work? 
 ==================================================================
 
 It depends on the use you want to do with it, basically the number  of nodes / DApps that you want to host in it. A basic setup is at least 4 gbs RAM (ideally 8GBs) and a 200 GBs SSD disk, it is important that the disk is SSD, otherwise writing speed won´t be able to cope with the ETH chain sync. On top  of that requirements add capacity as needed to run the nodes  you wish to run.  
 
-Can I run DAppNode in a laptop??
+Can I run DAppNode in a laptop?
 ================================
 
 Yes you can!!! Different thing is if you will be able to get any relevant proof of work reward, what does not seem very likely talking about the main cryptocurrencies. Still DAppNode is a great solutions for hosting your proof of stake nodes and get some coins out of your stake easily and securely stored in your DAppNode, or mine new cryptocurrencies that are CPU mineable and still low difficulty.     
@@ -46,8 +46,8 @@ Can i install DAppNode in  a Raspberry Pi with extra storage?
 
 Unfortunately not at the moment, DAppNode includes an Ethereum full node  and a IPFS node by default so they need a powerful hardware to be run on that a Raspberry pi with extra storage cannot provide. 
 
-If  DAppNode is free how do you maintain operations/development??
-==================================================================
+If  DAppNode is free how do you maintain operations/development?
+================================================================
 
 DAppNode software is an open source platform developed by the non profit association DAAppNode association in Zug. DAppNode Association is driven and funded by the community, at the moment we have three grants from EF, Aragon and ECF, but the association also has sustainabiliity sources relying on projects that want their package uploaded  to DAppNode and featured in the installer section,authorised hardware resellers make a donation to the association for every piece of hardware with DAppNode pre installed they sell and we are also backed by individual donors and supporters.  
 
@@ -61,7 +61,7 @@ Do I need technical knowledge to install / run a DAppNode?
 
 No! One of our the critical aspects to achieve our objectives,  is eliminating the technical friction to install and run nodes so a minimum knowledge is enough to run your own DAppNode. If you know how to open the terminal and run a couple of commands in the console terminal you are done!
 
-Can I use IPFS once DAppNode is installed ??
+Can I use IPFS once DAppNode is installed?
 ============================================
 
 Yes!Take in account that IPFS is a core component of DAppNode itself , used for example to host the packages to be downloaded but you can also use it your own, as you  have a totally functional IPFS node. You can access to it by typing http://my.ipfs.dnp.dappnode.eth:5001/webui 

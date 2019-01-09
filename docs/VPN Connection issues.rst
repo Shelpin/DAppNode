@@ -67,10 +67,11 @@ Linux & Android
 
 If following the instructions has not made your connection to work, try to manually setup a VPN profile within your computer using the credentials given in the OTP web you get after installation under the tab Linux. 
 
-.. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/ipsecoopotions.jpg
+.. image:: doc/ipsecoopotions.jpg
    :width: 300 px
    :align: center
 
+https://github.com/Shelpin/DAppNode/blob/master/doc/ipsecoopotions.jpg
 
 .. image:: https://github.com/Shelpin/DAppNode/blob/master/doc/username.jpg
    :width: 300 px
@@ -81,6 +82,7 @@ If following the instructions has not made your connection to work, try to manua
    :width: 300 px
    :align: center
    
+
 
 If you are still experiencing problems to connect from your Linux device please ping us in our channels, we will be happy to help!!.
 

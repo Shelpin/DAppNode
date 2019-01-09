@@ -64,4 +64,10 @@ Yes!Take in account that IPFS is a core component of DAppNode itself , used for 
 The first time you access to it will ask you for your “Custom API address”, just fill the field with this address and you will be connected to your IPFS node. This is the input you have to enter in the field "Is your API in a port other than 5001?
 /ip4/172.33.1.5/tcp/5001
 
+Is there any way to have a Web GUI for the Parity client?
+=========================================================
+
+Since we updated from Parity 2.1.6 to newer versions ,  WEB GUI support has been deprecated by Parity, so at the moment the only way to interact with your node is through the command line. We are looking for solutions but it is not an easy issue. 
+
+
 

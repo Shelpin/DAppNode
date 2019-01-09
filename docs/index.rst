@@ -31,6 +31,7 @@ Contents
    frequently-asked-questions.rst
    user-guide.rst
    Advanced users bonus.rst
+   VPN Connectioni issues.rst
    FAQS.rst
    Troubleshooting.rst
    License.rst

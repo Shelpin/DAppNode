@@ -22,13 +22,6 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   introduction-to-dappnode.rst
-   install-dappnode.rst
-   dappnode-by-example.rst
-   dappnode-core.rst
-   security-considerations.rst
-   contributing.rst
-   frequently-asked-questions.rst
    user-guide.rst
    Advanced users bonus.rst
    VPN Connection issues.rst

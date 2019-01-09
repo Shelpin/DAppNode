@@ -26,6 +26,11 @@ Why should I run a DAppNode?
 
 Centralization of blockchain networks and infrastructure is a huge problem for the whole bloockchain vision, that can even make it dystopian. By running your own nodes you contribute to decentralization and censorship resistance of blockchain networks with a higher degree of privacy while getting some incentives for sharing your infrastructure if you wish to!
 
+Why can´t I connect via VPN to my DAppNode?
+===========================================
+
+We have created a complete troubleshooting for this question… please find it below. 
+
 Can i share my DAppNode?
 ========================
 
@@ -52,7 +57,7 @@ Can i upload my own packages to DAppNode?
 Yes!! We have developed an SDK to make the loading of packages to DAppNode easy for everyone. Check this doc! https://github.com/dappnode/DAppNodeSDK/wiki/DAppNode-SDK-tutorial
 
 Do I need technical knowledge to install / run a DAppNode?
-==================================================================
+==========================================================
 
 No! One of our the critical aspects to achieve our objectives,  is eliminating the technical friction to install and run nodes so a minimum knowledge is enough to run your own DAppNode. If you know how to open the terminal and run a couple of commands in the console terminal you are done!
 

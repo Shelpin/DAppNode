@@ -62,8 +62,8 @@ For Windows XP, Vista, 7, 8.x and 10
 
 Note that you have to run this command as elevated command prompt and then reboot your computer.
 
-Linux
-=====
+Linux & Android
+===============
 
 If following the instructions has not made your connection to work, try to manually setup a VPN profile within your computer using the credentials given in the OTP web you get after installation under the tab Linux. 
 
@@ -81,8 +81,6 @@ If following the instructions has not made your connection to work, try to manua
    :width: 300 px
    :align: center
    
-
-
 
 If you are still experiencing problems to connect from your Linux device please ping us in our channels, we will be happy to help!!.
 

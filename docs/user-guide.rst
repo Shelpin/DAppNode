@@ -222,7 +222,7 @@ Now it is time…
 Enter  your DAppNode
 ####################
 
-Navigate to `https://my.admin.dnp.dappnode.eth` to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
+Enter https://my.admin.dnp.dappnode.eth to access DAppNode's admin interface. Bear in mind that DAppNode's functionality will be limited until the Ethereum mainnet chain is synced (should take around 2~3 hours to get a warp sync).
 
 Now you can do things like for example:
 

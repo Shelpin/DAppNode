@@ -54,7 +54,7 @@ For Windows XP
 ``REG ADD HKLM\SYSTEM\CurrentControlSet\Services\RasMan\Parameters /v ProhibitIpSec /t REG_DWORD /d 0x0 /f``
 
 Disabled  Ipsec Encryption
---------------------------
+##########################
 
 Although uncommon, some Windows systems disable IPsec encryption, causing the connection to fail. To re-enable it, run the following command and reboot your PC.
 

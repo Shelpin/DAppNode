@@ -28,6 +28,7 @@ Contents
    Troubleshooting.rst
    Advanced users bonus.rst
    License.rst
+   Technical Doc.rst
 
 
 Indices and tables

@@ -7,7 +7,7 @@ Welcome to DAppNode's documentation!
 ====================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents:
 
 
@@ -20,7 +20,7 @@ Contents
 ========
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
    user-guide.rst
    VPN Connection issues.rst
